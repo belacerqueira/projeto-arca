@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Projeto Arca</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logoprojetoarca.jpeg" alt="Projeto Arca" class="logo-img">
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-bar" />
+            </div>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 class="page-title">Login</h1>
+        <form class="form" onsubmit="event.preventDefault();">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class="input-field" />
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" class="input-field" />
+            </div>
+            <div class="form-options">
+                <div class="remember-me">
+                    <input type="checkbox" id="lembrar" />
+                    <label for="lembrar">Lembre-se de mim</label>
+                </div>
+                <div class="actions-row">
+                    <button type="submit" class="btn-confirm">Confirmar</button>
+                    <div class="links">
+                        <a href="cadastro.html" class="link">Não possui cadastro?</a>
+                        <a href="senha.html" class="link">Esqueceu a senha?</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
