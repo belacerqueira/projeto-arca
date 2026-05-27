@@ -16,12 +16,65 @@ body {
 }
 
 
-.header {
+nav.navbar {
+    background-color: #21509a !important;
+}
+
+.offcanvas {
+    background-color: #21509a !important;
+    width: 320px;
+}
+
+.item-lateral {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 10px;
+}
+
+.item-titulo-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #ffffff;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.icone-lateral {
+    width: 45px;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav-link-lateral {
+    color: white !important;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.sublista{
+    list-style-type: disc;
+    padding-left: 75px; 
+    margin: 0;
+}
+
+.sublista li {
+    color: #f2c94c; 
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.sublista li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sublista li a:hover {
+    text-decoration: underline;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1) brightness(2);
 }
 
 .logo-img {
