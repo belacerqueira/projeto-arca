@@ -2,19 +2,6 @@
     font-family: 'Cause';
     src: url(cause.otf) format('.otf');
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Cause';
-    background-color: #ffffff;
-    min-height: 100vh;
-    color: #333;
-}
-
 
 nav.navbar {
     background-color: #21509a !important;
@@ -77,55 +64,18 @@ nav.navbar {
     filter: invert(1) brightness(2);
 }
 
-.logo-img {
-    height: 80px;     
-    width: auto;
-    display: block;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+body {
+    font-family: 'Cause';
+    background-color: #ffffff;
+    min-height: 100vh;
+    color: #333;
 }
-
-.search-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.search-icon {
-    color: #1a3a8f;
-    font-size: 18px;
-}
-
-.search-bar {
-    width: 260px;
-    height: 28px;
-    border: 1.5px solid #1a3a8f;
-    border-radius: 20px;
-    padding: 0 14px;
-    outline: none;
-    font-size: 14px;
-}
-
-.menu-icon {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.menu-icon span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: #1a3a8f;
-    border-radius: 2px;
-}
-
-
 .main-content {
     max-width: 700px;
     margin: 60px auto 0;
@@ -306,14 +256,6 @@ nav.navbar {
 }
 
 @media (max-width: 768px) {
-    .header {
-        padding: 15px 20px;
-    }
-    
-    .search-bar {
-        width: 140px;
-    }
-    
     .form-group {
         flex-direction: column;
         align-items: stretch;
