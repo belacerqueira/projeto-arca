@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Cause';
-    src: url(cause.otf) format('.otf');
+    src: url('cause.otf') format('opentype');
 }
 
 nav.navbar {
@@ -71,7 +71,7 @@ nav.navbar {
 }
 
 body {
-    font-family: 'Cause';
+    font-family: 'Cause', sans-serif;
     background-color: #ffffff;
     min-height: 100vh;
     color: #333;

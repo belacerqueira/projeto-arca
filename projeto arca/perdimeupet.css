@@ -4,6 +4,10 @@ body {
     color: #333;
 }
 
+body {
+    padding-top: 105px;
+}
+
 nav.navbar {
     background-color: #21509a !important;
 }
@@ -64,6 +68,4 @@ nav.navbar {
 .navbar-toggler-icon {
     filter: invert(1) brightness(2);
 }
-
-
 
