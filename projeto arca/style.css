@@ -11,67 +11,67 @@ body {
     color: #333;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: white;
+nav.navbar {
+    background-color: #21509a !important;
 }
 
-
-.header {
-    background-color: white;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 20px 0;
+.offcanvas {
+    background-color: #21509a !important;
+    width: 320px;
 }
 
-.header-content {
+.item-lateral {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 10px;
+}
+
+.item-titulo-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    gap: 15px;
+    margin-bottom: 8px;
 }
 
-.logo {
-    flex: 1;
+.icone-lateral {
+    width: 45px;
+    height: auto;
+    object-fit: contain;
 }
 
-.logo-img {
-    height: 60px;
-    width: auto;
+.nav-link-lateral {
+    color: white !important;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
-.nav {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    flex: 1;
-    justify-content: flex-end;
+.sublista{
+    list-style-type: disc;
+    padding-left: 75px; 
+    margin: 0;
 }
 
-.search-input {
-    padding: 8px 15px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    width: 200px;
-    font-size: 14px;
+.sublista li {
+    color: #f2c94c; 
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
-.search-input:focus {
-    outline: none;
-    border-color: #a3368f;
+.sublista li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.menu-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #1e3a8a;
+.sublista li a:hover {
+    text-decoration: underline;
 }
 
-.menu-btn:hover {
-    opacity: 0.7;
+.navbar-toggler-icon {
+    filter: invert(1) brightness(2);
 }
+
 
 
 .main-content {
