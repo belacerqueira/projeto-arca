@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    padding-top: 110px;
+    padding-top: 120px;
 }
 
 nav.navbar {
@@ -74,12 +74,29 @@ nav.navbar {
     src: url('cause.otf') format('opentype');
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.localizacao {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.texto-filtrar {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
 .botoes-container {
     display: flex;
     align-items: center;
     gap: 5px;
     /*impede os elementos de quebrarem a linha*/
     flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .texto-filtrar {
@@ -90,6 +107,9 @@ nav.navbar {
 .btn-animal {
     width: 70px;
     height: 40px;
+    background-color:#21509a;
+    border-radius: 20px;
+    color: white;
 }
 
 .btn-genero {
@@ -99,7 +119,7 @@ nav.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: #B4B9C1;
     padding: 0;
 }
 
@@ -109,19 +129,18 @@ nav.navbar {
     object-fit: contain;
 }
 
+.g-4 {
+    width: 1800px;
+}
+
 .card {
-    width: 18rem;
     background-color: #993399;
+    color: white;
 }
 
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    /*o object-fit deixa todas as fotos do mesmo tamanho,
-    corta sem deformar e faz os cards parecerem perfeitamente alinhados.*/
-    object-fit: cover;
+.container {
+    display: flex;
+    justify-content: center;
 }
 
-.row {
-    gap: 20px;
-}
+
