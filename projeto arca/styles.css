@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+nav.navbar {
+    background-color: #21509a !important;
+}
+
+.logo-navbar {
+    width: 90px;
+    height: auto;
+}
+
+.navbar .form-control {
+    min-width: 180px;
+}
+
+.navbar .btn-primary {
+    background-color: white;
+    color: #21509a;
+    border: none;
+    font-weight: bold;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #f0f0f0;
+    color: #21509a;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1) brightness(2);
+}
+
+.offcanvas {
+    background-color: #21509a !important;
+    width: 320px;
+    color: white;
+}
+
+.offcanvas-title {
+    color: white;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+.item-lateral {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 10px;
+}
+
+.item-titulo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.icone-lateral {
+    width: 45px;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav-link-lateral {
+    color: white !important;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.sublista {
+    list-style-type: disc;
+    padding-left: 75px;
+    margin: 0;
+}
+
+.sublista li {
+    color: #f2c94c;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.sublista li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sublista li a:hover {
+    text-decoration: underline;
+}
+
+
+.links {
+    margin-top: 110px;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+
+.filtros {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.filtros h3 {
+    margin-bottom: 0;
+}
+
+.filtros button {
+    background: #284999;
+    color: white;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 8px 20px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.filtros button:hover {
+    opacity: 0.9;
+}
+
+
+.pets {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card-pet {
+    background: linear-gradient(#8d2de2, #c43ad6);
+    max-width: 280px;
+    width: 100%;
+    border-radius: 20px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    transition: transform 0.3s ease;
+}
+
+.card-pet:hover {
+    transform: translateY(-4px);
+}
+
+.card-pet img {
+    width: 90%;
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.card-pet p {
+    color: white;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.card-pet button {
+    width: 100%;
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+@media (max-width: 992px) {
+    .navbar .form-control {
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .links {
+        margin-top: 130px;
+    }
+
+    .filtros {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .pets {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-navbar {
+        width: 70px;
+    }
+
+    .offcanvas {
+        width: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .navbar .d-flex {
+        display: none !important;
+    }
+
+    .links {
+        padding: 15px;
+    }
+
+    .pets {
+        padding: 20px;
+    }
+}
+
+.detalhes-pet {
+    display: none;
+    background: white;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.detalhes-pet p {
+    color: black;
+    margin: 5px 0;
+}

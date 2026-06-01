@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Arca</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-white fixed-top shadow-sm">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="./logo2.jpeg" alt="Logo Projeto Arca" class="logo-navbar">
+            </a>
+
+            <form class="d-flex me-3">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar">
+                <button class="btn btn-primary" type="submit">Buscar</button>
+            </form>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Adotar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Perdi meu Pet</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Achei um Pet</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Castração Gratuita</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ONGs</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="links">
+        <a href="#">Página inicial</a> |
+        <a href="#">Achei um pet</a>
+    </section>
+
+    <section class="filtros">
+
+        <h3>Filtrar:</h3>
+
+        <button onclick="filtrarTipo('todos')">Todos</button>
+
+        <button onclick="filtrarTipo('cao')">
+            Cães
+        </button>
+
+        <button onclick="filtrarTipo('gato')">
+            Gatos
+        </button>
+
+        <button onclick="filtrarSexo('macho')">
+            ♂
+        </button>
+
+        <button onclick="filtrarSexo('femea')">
+            ♀
+        </button>
+
+        <button onclick="filtrarSexo('todos')">
+            Ambos
+        </button>
+
+    </section>
+
+    <section class="pets">
+
+        <div class="card-pet" data-tipo="gato" data-sexo="macho">
+            <img src="./img/siamês.jpg" alt="">
+            <p>Gato Siamês</p>
+
+            <button onclick="toggleDetalhes('siames')">
+                Ver detalhes
+            </button>
+
+            <div id="siames" class="detalhes-pet">
+                <p><strong>Sexo:</strong> Macho</p>
+                <p><strong>Idade:</strong> 4 meses</p>
+                <p>Gato dócil, vacinado e acostumado com crianças.</p>
+            </div>
+        </div>
+
+        <div class="card-pet" data-tipo="cao" data-sexo="femea">
+            <img src="./img/golden-retriever.jpeg" alt="">
+            <p>Golden Retriever</p>
+
+            <button onclick="toggleDetalhes('golden')">
+                Ver detalhes
+            </button>
+
+            <div id="golden" class="detalhes-pet">
+                <p><strong>Sexo:</strong> Fêmea</p>
+                <p><strong>Idade:</strong> 1 ano</p>
+                <p>Golden Retriever muito amigável e sociável.</p>
+            </div>
+        </div>
+
+        <div class="card-pet" data-tipo="cao" data-sexo="macho">
+            <img src="./img/border-collie.jpg" alt="">
+            <p>Border Collie</p>
+
+            <button onclick="toggleDetalhes('collie')">
+                Ver detalhes
+            </button>
+
+            <div id="collie" class="detalhes-pet">
+                <p><strong>Sexo:</strong> Macho</p>
+                <p><strong>Idade:</strong> 4 anos</p>
+                <p>Border Collie inteligente e cheio de energia.</p>
+            </div>
+        </div>
+
+        <div class="card-pet" data-tipo="gato" data-sexo="macho">
+            <img src="./img/gato-persa.png" alt="">
+            <p>Gato Persa</p>
+
+            <button onclick="toggleDetalhes('persa')">
+                Ver detalhes
+            </button>
+
+            <div id="persa" class="detalhes-pet">
+                <p><strong>Sexo:</strong> Macho</p>
+                <p><strong>Idade:</strong> 3 meses</p>
+                <p>Filhote tranquilo e muito carinhoso.</p>
+            </div>
+        </div>
+
+        <div class="card-pet" data-tipo="cao" data-sexo="macho">
+            <img src="./img/labrador.jpg" alt="">
+            <p>Labrador</p>
+
+            <button onclick="toggleDetalhes('labrador')">
+                Ver detalhes
+            </button>
+
+            <div id="labrador" class="detalhes-pet">
+                <p><strong>Sexo:</strong> Macho</p>
+                <p><strong>Idade:</strong> 2 anos</p>
+                <p>Labrador brincalhão e ótimo com crianças.</p>
+            </div>
+        </div>
+
+        <div class="card-pet" data-tipo="gato" data-sexo="femea">
+            <img src="./img/gatinha srd.png" alt="">
+            <p>Gatinha SRD</p>
+
+            <button onclick="toggleDetalhes('srd')">
+                Ver detalhes
+            </button>
+
+            <div id="srd" class="detalhes-pet">
+                <p><strong>Sexo:</strong> Fêmea</p>
+                <p><strong>Idade:</strong> 6 meses</p>
+                <p>Gatinha saudável e muito dócil</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+
+        let filtroTipo = "todos";
+        let filtroSexo = "todos";
+
+        function toggleDetalhes(id) {
+
+            const detalhe = document.getElementById(id);
+
+            if (detalhe.style.display === "block") {
+                detalhe.style.display = "none";
+            } else {
+                detalhe.style.display = "block";
+            }
+        }
+
+        function filtrarTipo(tipo) {
+
+            filtroTipo = tipo;
+
+            aplicarFiltros();
+        }
+
+        function filtrarSexo(sexo) {
+
+            filtroSexo = sexo;
+
+            aplicarFiltros();
+        }
+
+        function aplicarFiltros() {
+
+            const cards = document.querySelectorAll(".card-pet");
+
+            cards.forEach(card => {
+
+                const tipo = card.dataset.tipo;
+                const sexo = card.dataset.sexo;
+
+                const tipoValido =
+                    filtroTipo === "todos" ||
+                    tipo === filtroTipo;
+
+                const sexoValido =
+                    filtroSexo === "todos" ||
+                    sexo === filtroSexo;
+
+                if (tipoValido && sexoValido) {
+
+                    card.style.display = "block";
+
+                } else {
+
+                    card.style.display = "none";
+                }
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
