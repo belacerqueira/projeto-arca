@@ -5,8 +5,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Cause';
+    src: url('cause.otf') format('opentype');
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Cause', sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
