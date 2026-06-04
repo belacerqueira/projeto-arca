@@ -136,6 +136,7 @@ h1 {
 .card {
     background-color: #993399;
     color: white;
+    transition: transform 0.3s ease;
 }
 
 .card-img-top {
@@ -158,3 +159,39 @@ h1 {
     color:#B4B9C1;
 }
 
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.nhonho {
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    gap: 20px;
+
+    min-height: 80vh; /* ocupa a altura da tela */
+    margin-left: 20px;
+    margin-right: 310px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.adocao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.adocao p {
+    margin: 0;
+}
+
+.icone-adotar {
+    width: 60px;
+    height: auto;
+}
